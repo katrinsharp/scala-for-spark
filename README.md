@@ -14,12 +14,14 @@
 ```
 > sbt
 ```
-You should see `>` after it's updating some its dependencies. Now type:
+You should see `>` after it's updating some its dependencies (Use `exit` for quitting). Now type:
 
 ```
 > console
 ```
 
-You should see `scala>` after some more updates.
+You should see `scala>` after some more updates (Use `:q` for quitting). You're ready to go with Scala CLI.
+
+* Open the cloned project in IJ: File -> New -> Project from existing sources. You're ready to go with IJ.
 
 
