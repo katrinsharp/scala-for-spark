@@ -1,0 +1,17 @@
+package com.scalator.scalaforspark
+
+import org.scalatest.{Matchers, WordSpecLike}
+
+class Exercise4Spec
+  extends WordSpecLike
+      with Matchers {
+
+
+    "Exercise 4" should {
+
+      "4) `doubleMe` should be successfully implemented" in {
+        assert(Exercises.doubleMe(None).isEmpty)
+        assert(Exercises.doubleMe(Some(3)).contains(6))
+      }
+    }
+  }

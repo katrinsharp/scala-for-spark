@@ -7,11 +7,7 @@ scalaVersion := "2.11.8"
 val sparkVersion = "2.1.0"
 
 libraryDependencies ++= Seq(
-  "org.scalikejdbc" %% "scalikejdbc"         % "2.5.0" % "test",
-  "org.scalikejdbc" %% "scalikejdbc-config"  % "2.5.0" % "test",
-  "ch.vorburger.mariaDB4j" % "mariaDB4j" % "2.2.2" % "test",
   "com.typesafe" % "config" % "1.3.1",
-  "mysql" % "mysql-connector-java" % "6.0.5" % "provided",
   "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
   "org.apache.spark" %% "spark-sql"  % sparkVersion % "provided")
 

@@ -1,0 +1,22 @@
+package com.scalator.scalaforspark
+
+import com.typesafe.config.ConfigFactory
+import org.scalatest.{BeforeAndAfterAll, Matchers, WordSpecLike}
+
+import scala.io.Source
+
+class Exercises1Spec
+  extends WordSpecLike
+      with Matchers {
+
+
+    "Exercise 1" should {
+
+      "1) `halfOf` should successfully return -1 or 1/2*length" in {
+
+        assert(Exercises.halfOf("") == -1)
+        assert(Exercises.halfOf("123") == 1)
+        assert(Exercises.halfOf("1234") == 2)
+      }
+    }
+  }

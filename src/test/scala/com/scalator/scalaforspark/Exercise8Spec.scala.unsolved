@@ -1,0 +1,18 @@
+package com.scalator.scalaforspark
+
+import org.scalatest.{Matchers, WordSpecLike}
+
+class Exercise8Spec
+  extends WordSpecLike
+      with Matchers {
+
+
+    "Exercise 8" should {
+
+      "8) `matchMe` should be successfully implemented" in {
+        assert(Exercises.matchMe(1 -> 2) == "1 and 2")
+        assert(Exercises.matchMe(1 -> "4") == "1 and 4")
+        assert(!Exercises.matchMe(1).isEmpty)
+      }
+    }
+  }

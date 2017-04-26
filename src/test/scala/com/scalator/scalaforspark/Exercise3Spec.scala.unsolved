@@ -1,0 +1,17 @@
+package com.scalator.scalaforspark
+
+import org.scalatest.{Matchers, WordSpecLike}
+
+class Exercise3Spec
+  extends WordSpecLike
+      with Matchers {
+
+
+    "Exercise 3" should {
+
+      "3) `intPlusDouble` and `zeroPlusDouble` should be successfully implemented" in {
+        assert(Exercises.intPlusDouble(1)(1.5) == 2.5)
+        assert(Exercises.zeroPlusDouble(1.5) == 1.5)
+      }
+    }
+  }

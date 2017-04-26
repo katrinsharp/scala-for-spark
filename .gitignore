@@ -2,7 +2,7 @@
 .vagrant
 .blockade
 *.bck
-
+*TrainerNotes*
 # sbt
 lib_managed
 project/project
