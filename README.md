@@ -24,4 +24,6 @@ You should see `scala>` after some more updates (Use `:q` for quitting). You're 
 
 * Open the cloned project in IJ: File -> New -> Project from existing sources. You're ready to go with IJ.
 
+The link to slides: https://github.com/katrinsharp/scala-for-spark-slides
+
 
