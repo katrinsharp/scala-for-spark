@@ -1,15 +1,19 @@
 # Scala for Spark
 
-## Setup instructions (Mac only, Win PR are welcome!)
+## Setup instructions:
 
-* Install sbt: http://www.scala-sbt.org/release/docs/Installing-sbt-on-Mac.html (you can use `brew`, it will install the latest).
-* Install Intellij: https://www.jetbrains.com/idea/download/#section=mac
+* Install sbt: 
+Mac: http://www.scala-sbt.org/release/docs/Installing-sbt-on-Mac.html (you can use `brew`, it will install the latest).
+Win: http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Windows.html
+* Install Intellij: 
+Mac: https://www.jetbrains.com/idea/download/#section=mac
+Win: https://www.jetbrains.com/idea/download/#section=windows
 * Install Scala plugin for IJ: Intellij -> Preferences -> Plugins -> Search for official Scala plugin.
-* Clone this repo
+* Clone this repo: `git clone https://github.com/katrinsharp/scala-for-spark.git`
 
 ## Verify
 
-* Open up a CLI anf cd to root folder of this repo. Type:
+* Open up a CLI (command line) and `cd` to root folder of this repo. Type:
 
 ```
 > sbt
