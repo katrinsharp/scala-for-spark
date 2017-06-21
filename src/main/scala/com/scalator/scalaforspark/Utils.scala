@@ -9,11 +9,11 @@ object Utils {
 
     val appName = "Scala for Spark"
     val master = conf.getString("spark.master")
-    val jars = conf.getString("spark.jars.location")
+    // val jars = conf.getString("spark.jars.location")
     val session = SparkSession.builder
       .master(master)
       .appName(appName)
-      .config("spark.jars", jars)
+      // .config("spark.jars", jars)
       .getOrCreate()
     session
   }
