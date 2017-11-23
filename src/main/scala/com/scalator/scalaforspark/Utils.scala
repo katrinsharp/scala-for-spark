@@ -1,7 +1,9 @@
 package com.scalator.scalaforspark
 
 import com.typesafe.config.Config
+import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.SparkSession
+import org.apache.spark.streaming.{Duration, Seconds, StreamingContext}
 
 object Utils {
 
@@ -16,5 +18,16 @@ object Utils {
       // .config("spark.jars", jars)
       .getOrCreate()
     session
+  }
+
+  def createSparkStreamingContext(conf: Config, time: Duration) = {
+
+    val appName = "Scala for Spark"
+    val master = conf.getString("spark.master")
+    val sparkConf = new SparkConf()
+      .setMaster(master)
+      .setAppName(appName)
+
+    new StreamingContext(sparkConf, time)
   }
 }

@@ -8,8 +8,10 @@ val sparkVersion = "2.1.0"
 
 libraryDependencies ++= Seq(
   "com.typesafe" % "config" % "1.3.1",
+  "org.jfarcand" % "wcs" % "1.5",
   "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
-  "org.apache.spark" %% "spark-sql"  % sparkVersion % "provided")
+  "org.apache.spark" %% "spark-sql"  % sparkVersion % "provided",
+  "org.apache.spark" % "spark-streaming_2.11" % sparkVersion % "provided")
 
 resolvers += Resolver.sonatypeRepo("public")
 
