@@ -2,6 +2,7 @@
 
 ## Setup instructions:
 
+* Install JDK: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html (JDK 8).
 * Install sbt: 
 Mac: http://www.scala-sbt.org/release/docs/Installing-sbt-on-Mac.html (you can use `brew`, it will install the latest).
 Win: http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Windows.html
